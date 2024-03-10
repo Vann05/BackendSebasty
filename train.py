@@ -11,7 +11,7 @@ own_layers = [
     Dropout(0.5)
 ]
 
-assistant = BasicAssistant('backend/answer.json', hidden_layers=own_layers)
+assistant = BasicAssistant('answer.json', hidden_layers=own_layers)
 
 assistant.fit_model(epochs=50)
 assistant.save_model()
